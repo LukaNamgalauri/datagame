@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="scene">
+        <div class="cube">
+          <div class="cube__face cube__face--left"></div>
+          <div class="cube__face cube__face--right"></div>
+          <div class="cube__face cube__face--top"></div>
+          <div class="cube__face cube__face--bottom"></div>
+          <div class="cube__face cube__face--front"></div>
+          <div class="cube__face cube__face--back"></div>
+        </div>
+      </div>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <title>Minecraft</title>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link rel="stylesheet" href="https://minecraft--duck132912.repl.co/minecraft.css" />
+          <link rel="shortcut icon" href="https://minecraft--duck132912.repl.co/icon.png"
+           type="image/x-icon" />
+          <link rel="icon" href="https://minecraft--duck132912.repl.co/icon.png"
+           type="image/x-icon" />
+      </head>
+      
+      <body translate="no" onpageshow="updateidea();">
+              <script src="https://minecraft--duck132912.repl.co/script.js">
+              </script>
+              <link rel="stylesheet" type="text/css" href="https://minecraft--duck132912.repl.co/style.css">
+              <img alt="Minecraft" id="logo" src="https://minecraft--duck132912.repl.co/minecraft.svg"/>
+      <div id="flashingtext">დათა დაიჭირეთ!!!!!!</div>
+      <main>
+      <button class="button" onclick="play()"><a href="file:///C:/Users/Luka/Desktop/jshead/index.html">თამაშის დაწყება</a></button>
+      <br>
+      <button class="button" onclick="playmulti()" id="playmulti">პარამეტრები</button> <br>
+      <button class="button" onclick="alert('Thanks to classic.minecraft.net for the game part')">Credits</button>
+      <button class="button" onclick="how()">როგორ ვითამაშოთ?</button>
+      <audio id="audio">
+        <source src="minecraft.mp4">
+      </audio>
+      <button id="button" class="button">Play audio</button>
+      <button class="button button_small left" onclick="change()">არ დააჭირო</button>
+      <button class="button button_small right" onclick="quit();">თამაშიდან გასვლა</button>
+      <script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
+      <script type="text/javascript">
+      function updateidea() {
+        if (!("Notification" in window)) {
+          alert("This browser does not support desktop notification");
+        }
+        else if (Notification.permission === "granted") {
+          var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+        }
+        else if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(function (permission) {
+            if (permission === "granted") {
+              var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+            }
+          });
+        }
+      }Notification.requestPermission().then(function(result) {
+        console.log(result);
+      });function spawnNotification(body, icon, title) {
+        var options = {
+            body: body,
+            icon: icon
+        };
+      }
+      var button = document.getElementById("button");
+      var audio = document.getElementById("audio");
+      button.addEventListener("click", function(){
+        if(audio.paused){
+          audio.play();
+          button.innerHTML = "Pause audio";
+        } else {
+          audio.pause();
+          button.innerHTML = "Play audio";
+      }
+      });
+      </script>
+      </main>
+</body>
+</html>
